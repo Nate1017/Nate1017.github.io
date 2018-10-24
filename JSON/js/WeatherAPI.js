@@ -50,7 +50,8 @@ function changeCity(){
 
 	for (var i = 0; i < catData.Cats.length; i++){
 		randCat = int(random(0, catData.Cats.length));
-
+		console.log(randCat);
+		catBG = loadImage("js/image/cat" + randCat + ".jpg");
 	}
 }
 
@@ -65,11 +66,12 @@ function draw(){
 	if(weatherData){
 		temp = weatherData.main.temp;
 		wind = weatherData.wind.speed;
-		catBG = loadImage(catData.Cats[randCat].path);
-		
+		//catBG = loadImage("js/image/cat" + randCat + ".jpg");
+		//console.log(catBG);
 		if(temp < 0){
 			background(catBG);
 
+			fill(255);
 			textSize(sayingFontSize);
 			textAlign(CENTER);
 			text(SayingData.Weather[randSay].saying);
@@ -85,6 +87,7 @@ function draw(){
 		if(temp > 0 & temp <= 10){
 			background(catBG);
 
+			fill(255);
 			textSize(sayingFontSize);
 			textAlign(CENTER);
 			text(SayingData.Weather[randSay].saying, windowWidth/2, windowHeight/2);
@@ -100,6 +103,7 @@ function draw(){
 		if(temp > 10 & temp <=20){
 			background(catBG);
 
+			fill(255);
 			textSize(sayingFontSize);
 			textAlign(CENTER);
 			text(SayingData.Weather[randSay].saying, windowWidth/2, windowHeight/2);
@@ -115,6 +119,7 @@ function draw(){
 		if (temp > 20 & temp <= 30){
 		 	background(catBG);
 
+		 	fill(255);
 		 	textSize(sayingFontSize);
 		 	textAlign(CENTER);
 		 	text(SayingData.Weather[randSay].saying, windowWidth/2, windowHeight/2);
@@ -130,6 +135,7 @@ function draw(){
 		if(temp > 30 & temp <= 40){
 		 	background(catBG);
 
+		 	fill(255);
 		 	textSize(sayingFontSize);
 		 	textAlign(CENTER);
 		 	text(SayingData.Weather[randSay].saying, windowWidth/2, windowHeight/2);
@@ -145,6 +151,7 @@ function draw(){
 		if(temp > 40 & temp <= 50){
 		 	background(catBG);
 
+		 	fill(255);
 		 	textSize(sayingFontSize);
 		 	textAlign(CENTER);
 		 	text(SayingData.Weather[randSay].saying, windowWidth/2, windowHeight/2);
@@ -160,6 +167,7 @@ function draw(){
 		if(temp > 50 & temp <= 60){
 		 	background(catBG);
 
+		 	fill(255);
 		 	textSize(sayingFontSize);
 		 	textAlign(CENTER);
 		 	text(SayingData.Weather[randSay].saying, windowWidth/2, windowHeight/2);
@@ -175,6 +183,7 @@ function draw(){
 		if(temp > 60 & temp <= 70){
 		 	background(catBG);
 
+		 	fill(255);
 		 	textSize(sayingFontSize);
 		 	textAlign(CENTER);
 		 	text(SayingData.Weather[randSay].saying, windowWidth/2, windowHeight/2);
@@ -190,6 +199,7 @@ function draw(){
 		if(temp > 70 & temp <= 80){
 		 	background(catBG);
 
+		 	fill(255);
 		 	textSize(sayingFontSize);
 		 	textAlign(CENTER);
 		 	text(SayingData.Weather[randSay].saying, windowWidth/2, windowHeight/2);
@@ -205,6 +215,7 @@ function draw(){
 		if(temp > 80 & temp <= 90){
 		 	background(catBG);
 
+		 	fill(255);
 		 	textSize(sayingFontSize);
 		 	textAlign(CENTER);
 		 	text(SayingData.Weather[randSay].saying, windowWidth/2, windowHeight/2);
@@ -220,6 +231,7 @@ function draw(){
 		if(temp > 90 & temp <= 100){
 		 	background(catBG);
 
+		 	fill(255);
 		 	textSize(sayingFontSize);
 		 	textAlign(CENTER);
 		 	text(SayingData.Weather[randSay].saying, windowWidth/2, windowHeight/2);
@@ -235,6 +247,7 @@ function draw(){
 		if(temp > 100){
 		 	background(catBG);
 
+		 	fill(255);
 		 	textSize(sayingFontSize);
 		 	textAlign(CENTER);
 		 	text(SayingData.Weather[randSay].saying, windowWidth/2, windowHeight/2);
