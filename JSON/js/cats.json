@@ -1,0 +1,22 @@
+{
+	"Cats": [
+		{
+			"path": "js/image/cat0.jpg"
+		},
+		{
+			"path": "js/image/cat1.jpg"
+		},
+		{
+			"path": "js/image/cat2.jpg"
+		},
+		{
+			"path": "js/image/cat3.jpg"
+		},
+		{
+			"path": "js/image/cat4.jpg"
+		},
+		{
+			"path": "js/image/cat5.jpg"
+		}
+	]
+}
