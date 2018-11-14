@@ -54,7 +54,12 @@ function playVid(){
  	fill(0);
 	textSize(30);
 	textAlign(CENTER);
-	text("Video Playlist: Random Things I Like", displayWidth/2, 100);
+	text("Nathaniel's Video Playlist", displayWidth/2, 100);
+
+	fill(0);
+	textSize(13);
+	textAlign(CENTER);
+	text("Random videos of things I do and things I like", displayWidth/2, 120);
  }
 
 
