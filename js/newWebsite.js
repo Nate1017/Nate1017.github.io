@@ -19,6 +19,7 @@ var sadPup1text;
 var sadPup1desc;
 var sadPup3desc;
 
+
 //sounds
 var sadPupSound;
 var happyPupSound;
@@ -50,6 +51,7 @@ var doggyImg;
 var heartImg;
 var tearsImg;
 var deadImg;
+var BG;
 
 function setup(){
 	canvas = createCanvas(windowWidth, windowHeight);
@@ -59,7 +61,7 @@ function setup(){
 }
 
 function beginning(){
-	background(0);
+	background(BG);
 	greeting = createElement("h1","Hi hooman, please keep me happy");
 	homeScreenDescription = createElement("h2", "You have found a stray pup..what do you do?");
 	goal = createElement("h2", "The goal is to be able to make the pup feel loved 3 times, one mistake and your pup will be sad and cry");
@@ -156,7 +158,7 @@ function challenge3Victory(){
 }
 
 function sadPup3(){
-	background(0);
+	background(BG);
 	nameInput1.hide();
 	sadPupSound.play();
 	HS3title.html("You forgot my name....do you still love me?");
@@ -167,7 +169,7 @@ function sadPup3(){
 }
 
 function sadPup1(){
-	background(0);
+	background(BG);
 	ellipseSlider.hide();
 	HS1title.hide();
 	challenge1Description.hide();
@@ -180,7 +182,7 @@ function sadPup1(){
 }
 
 function sadPup2(){
-	background(0);
+	background(BG);
 	noName.hide();
 	HS3title.html("You have failed to give a name to the pup, a simple name, cmon...now the pup cries bitterly");
 	nameInput.hide();
@@ -230,6 +232,7 @@ function toHomeScene1Amination(){
   	deadImg = loadImage('Pictures/death.png');
   	happyPupSound = loadSound('Sound/happyPupSound.mp3');
   	sadPupSound = loadSound('Sound/sadPupSound.mp3');
+  	BG = loadImage('Pictures/Forest.png');
   }
 
 function windowResized(){
