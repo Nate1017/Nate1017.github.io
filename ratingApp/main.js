@@ -11,11 +11,6 @@ submitBtn.addEventListener("click", () => {
     mainContainer.style.display = "none"
 });
 
-rateBtn.addEventListener("click", () =>{
-    mainContainer.style.display = "block"
-    thanksContainer.classList.add("hidden")
-})
-
 rates.forEach((rate) => {
     rate.addEventListener("click", () => {
         rating.innerHTML = rate.innerHTML
