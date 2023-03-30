@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Save Web Form Data to Spreadsheets</title>
+	<script
+		src="https://code.jquery.com/jquery-3.4.1.js"
+		integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+		crossorigin="anonymous"></script>
+	<script>
+		function SubForm (){
+			$.ajax({
+				url:"https://api.apispreadsheets.com/data/yefsVBuR2m4oGusj/",
+				type:"post",
+				data:$("#myForm").serializeArray(),
+				success: function(){
+					alert("Form Data Submitted :)")
+				},
+				error: function(){
+					alert("There was an error :(")
+				}
+			});
+		}
+	</script>
+</head>
+<body>
+	<form id="myForm">
+		<label>Name</label>
+		<input name="name" />
+        <br>
+		<br/>
+		<label>Locale</label> <br>
+		<input type="radio" value="Bloomingdale" name="locale" /> Bloomingdale <br/>
+		<input type="radio" value="Chicago" name="locale" /> Chicago <br/>
+		<input type="radio" value="Chesterton" name="locale" /> Chesterton <br/>
+		<input type="radio" value="Cincinnati" name="locale" /> Cincinnati <br/>
+		<input type="radio" value="Park Ridge" name="locale" /> Park Ridge <br/>
+		<input type="radio" value="Naperville" name="locale" /> Naperville <br/>
+		<br/>
+		<label>CFO Organization</label> <br>
+		<input type="radio" value="Buklod" name="cfo-organization" /> Buklod <br/>
+		<input type="radio" value="KADIWA" name="cfo-organization" /> KADIWA <br/>
+		<input type="radio" value="binhi" name="cfo-organization" /> binhi <br/>
+		<br/>
+		<label>Sport</label>
+		<input name="sport" />
+		<br/>
+	</form>
+    <br>
+	<button onclick='SubForm()'>Submit</button>
+</body>
+</html>
