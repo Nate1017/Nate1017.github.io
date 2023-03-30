@@ -1,119 +1,49 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Monthly Reports Input</title>
-    <script>
-        src="https://code.jquery.com/jquery-3.4.1.js"
-        integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
-        crossorigin="anonymous">
-    </script>
-    <script>
-        function SubForm(){
-            $.ajax({
-                url:'https://api.apispreadsheets.com/data/pyarRosz3t8xb0QZ/',
-                type:'post',
-                data:$("#myForm").serializeArray(),
-                success: function(){
-                    alert("Form Data Submitted :)")
-                },
-                error: function(){
-                    alert("There was an error :(")
-                }
-            });
-        }
-    </script>
+	<title>Save Web Form Data to Spreadsheets</title>
+	<script
+		src="https://code.jquery.com/jquery-3.4.1.js"
+		integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+		crossorigin="anonymous"></script>
+	<script>
+		function SubForm (){
+			$.ajax({
+				url:"https://api.apispreadsheets.com/data/T1Hbr9Fm5jK7e96u/",
+				type:"post",
+				data:$("#myForm").serializeArray(),
+				success: function(){
+					alert("Form Data Submitted :)")
+				},
+				error: function(){
+					alert("There was an error :(")
+				}
+			});
+		}
+	</script>
 </head>
 <body>
-    <form action="">
-        <label for="locale">Locale</label>
-        <br>
-        <input type="text" name="locale" id="locale">
-        <br>
-        <br>
-        <label for="areas">Number of Areas</label>
-        <br>
-        <input type="number" name="areas" id="areas">
-        <br>
-        <br>
-        <label for="members">Total Number of Members</label>
-        <br>
-        <input type="number" name="members" id="members">
-        <br>
-        <br>
-        <label for="visited">Total Number of Members Visited</label>
-        <br>
-        <input type="number" name="visited" id="visited">
-        <br>
-        <br>
-        <label for="not-visited">Total Number of Members Not Visited</label>
-        <br>
-        <input type="number" name="not-visited" id="not-visited">
-        <br>
-        <br>
-        <label for="baptized">Are Newly Baptized</label>
-        <br>
-        <input type="number" name="baptized" id="baptized">
-        <br>
-        <br>
-        <label for="baptized-visited">Number of Newly Baptized Visited</label>
-        <br>
-        <input type="number" name="baptized-visited" id="baptized-visited">
-        <br>
-        <br>
-        <label for="present">Number of Baptized Present in Monthly Meeting</label>
-        <br>
-        <input type="number" name="present" id="present">
-        <br>
-        <br>
-        <label for="transfer">Transfer</label>
-        <br>
-        <input type="number" name="transfer" id="transfer">
-        <br>
-        <br>
-        <label for="transfer-visited">Number of Transfered Visited</label>
-        <br>
-        <input type="number" name="transfer-visited" id="transfer-visited">
-        <br>
-        <br>
-        <label for="transfer-present">Number of Transfered Present in Monthly Meetings</label>
-        <br>
-        <input type="number" name="transfer-present" id="transfer-present">
-        <br>
-        <br>
-        <label for="from-CFO">Came from other Christian Family Organization</label>
-        <br>
-        <input type="number" name="from-CFO" id="from-CFO">
-        <br>
-        <br>
-        <label for="cfo-visited">Number of New KADIWA Visited</label>
-        <br>
-        <input type="number" name="cfo-visited" id="cfo-visited">
-        <br>
-        <br>
-        <label for="cfo-present">Number of New KADIWA present in Montly Meeting</label>
-        <br>
-        <input type="number" name="cfo-present" id="cfo-present">
-        <br>
-        <br>
-        <label for="missionary">Attended Missionary Activities</label>
-        <br>
-        <input type="number" name="missionary" id="missionary">
-        <br>
-        <br>
-        <label for="sponsoring">Number of members sponsoring doctrinal instructees this month</label>
-        <br>
-        <input type="number" name="sponsoring" id="sponsoring">
-        <br>
-        <br>
-        <label for="fruits">Number of members able to bear fruits this month</label>
-        <br>
-        <input type="number" name="fruits" id="fruits">
-        <br>
-        <br>
-    </form>
-    <button onclick="SubForm()">Submit</button>
+	<form id="myForm">
+		<label>Locale</label>
+		<input name="locale" />
+		<br/>
+		<br/>
+		<label>Number of Areas</label>
+		<input name="areas" />
+		<br/>
+		<br/>
+		<label>Total Number of Members</label>
+		<input name="members" />
+		<br/>
+        <br/>
+		<label>Total Number of Members Visited</label>
+		<input name="visited" />
+		<br/>
+        <br/>
+		<label>Total Number of Members Not Visited</label>
+		<input name="not-visited" />
+		<br/>
+	</form>
+	<button onclick='SubForm()'>Submit</button>
 </body>
 </html>
