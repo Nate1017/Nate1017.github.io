@@ -23,7 +23,7 @@ table, tr, th, td, caption{
 header{
     display: flex;
     align-items: center;
-    padding: 2%;
+    padding: 1%;
     background-color: #5e412f;
 }
 
@@ -51,10 +51,11 @@ h1#title{
     background-color: #5e412f;
     color: #f07818;
     font-size: 30px;
-    margin-left: 50px;
+    margin-left: 100px;
 }
 
 .nav_links li a:hover{
     background-color: #78c0a8;
     color: #f07818;
+    padding: 2px;
 }
