@@ -22,96 +22,100 @@
 			});
 		}
 	</script>
+	<link rel="stylesheet" href="main.css">
 </head>
 <body>
-    <h1>Unity Games Registration</h1>
-    <h2>District of Northern Midwest</h2>
-	<form id="myForm">
-		<label><b>Name</b></label> <br>
-		<input type="text" for="name" required/>
-        <br>
-		<br/>
-		<label><b>Locale</b></label> <br>
-		<select name="locale" id="locale">
-			<option value="Bloomingdale">Bloomingdale</option>
-			<option value="Chesterton">Chesterton</option>
-			<option value="Chicago">Chicago</option>
-			<option value="Chicago North">Chicago North</option>
-			<option value="Cincinnati">Cincinnati</option>
-			<option value="Clarksville">Clarskville</option>
-			<option value="Cleveland">Cleveland</option>
-			<option value="Columbus">Columbus</option>
-			<option value="Dakota City">Dakota City</option>
-			<option value="Des Moines">Des Moines</option>
-			<option value="Detroit">Detroit</option>
-			<option value="Evansville">Evansville</option>
-			<option value="Fayetteville">Fayetteville</option>
-			<option value="Grand Rapids">Grand Rapids</option>
-			<option value="Great Lakes">Great Lakes</option>
-			<option value="Indianapolis">Indianapolis</option>
-			<option value="Kansas City">Kansas City</option>
-			<option value="Kyle">Kyle</option>
-			<option value="La Motte">La Motte</option>
-			<option value="Lousiville">Louisville</option>
-			<option value="Milwaukee">Milwaukee</option>
-			<option value="Minneapolis">Minneapolis</option>
-			<option value="Minot">Minot</option>
-			<option value="Naperville">Naperville</option>
-			<option value="Omaha">Omaha</option>
-			<option value="Oskaloosa">Oskaloosa</option>
-			<option value="Park Ridge">Park Ridge</option>
-			<option value="Piqua">Piqua</option>
-			<option value="Rockford">Rockford</option>
-			<option value="Scenic">Scenic</option>
-			<option value="Sioux Falls">Sioux Falls</option>
-			<option value="St. Louis">St. Louis</option>
-			<option value="St. Paul">St. Paul</option>
-			<option value="Sterling Heights">Sterling Heights</option>
-			<option value="Vienna">Vienna</option>
-			<option value="Williston">Williston</option>
-		</select>
-		<br>
-		<br>
-		<label><b>CFO Organization</b></label> <br>
-		<input type="radio" value="Buklod" name="cfo-organization" /> Buklod <br/>
-		<input type="radio" value="KADIWA" name="cfo-organization" /> KADIWA <br/>
-		<input type="radio" value="binhi" name="cfo-organization" /> binhi <br/>
-		<br/>
-		<label><b>Sport</b></label> <br>
-		<select name="sport" id="sport">
-			<option value="Basketball">Basketball</option>
-			<option value="Volleyball">Volleyball</option>
-			<option value="Bowling">Bowling</option>
-			<option value="Darts">Darts</option>
-			<option value="Chess">Chess</option>
-			<option value="Speed Cubing">Speed Cubing</option>
-			<option value="Sport Stacking">Sport Stacking</option>
-			<option value="Football">Football</option>
-			<optgroup label="Swimming">
-				<option value="Freestyle">Freestyle</option>
-				<option value="Backstroke">Backstroke</option>
-				<option value="Breastroke">Breastroke</option>
-				<option value="Butterfly">Butterfly</option>
-				<option value="Medley Relay">Medley Relay</option>
-			</optgroup>
-			<option value="Badminton">Badminton</option>
-			<option value="Table Tennis">Table Tennis</option>
-			<option value="Tennis">Tennis</option>
-			<optgroup label="Track Events">
-				<option value="Sprint 100m">Sprint 100m</option>
-				<option value="Sprint 200m">Sprint 200m</option>
-				<option value="Sprint 400m">Sprint 400m</option>
-				<option value="Relay 4x100">Relay 4x100</option>
-			</optgroup>
-			<option value="Archery">Archery</option>
-			<option value="Karate">Karate</option>
-			<option value="Taekwondo">Taekwondo</option>
-			<option value="Dodgeball">Dodgeball</option>
-			<option value="Golf">Golf</option>
-		</select>
-		<br/>
-	</form>
+    <h1 id="title">Unity Games Registration Form</h1>
+    <h2 id="subtitle">District of Northern Midwest</h2>
+		<form id="myForm">
+			<fieldset id="formborder">
+				<label><b>Name</b></label> <br>
+				<input type="text" for="name" required/>
+				<br>
+				<br/>
+				<label><b>Locale</b></label> <br>
+				<select name="locale" id="locale">
+					<option value="Bloomingdale">Bloomingdale</option>
+					<option value="Chesterton">Chesterton</option>
+					<option value="Chicago">Chicago</option>
+					<option value="Chicago North">Chicago North</option>
+					<option value="Cincinnati">Cincinnati</option>
+					<option value="Clarksville">Clarskville</option>
+					<option value="Cleveland">Cleveland</option>
+					<option value="Columbus">Columbus</option>
+					<option value="Dakota City">Dakota City</option>
+					<option value="Des Moines">Des Moines</option>
+					<option value="Detroit">Detroit</option>
+					<option value="Evansville">Evansville</option>
+					<option value="Fayetteville">Fayetteville</option>
+					<option value="Grand Rapids">Grand Rapids</option>
+					<option value="Great Lakes">Great Lakes</option>
+					<option value="Indianapolis">Indianapolis</option>
+					<option value="Kansas City">Kansas City</option>
+					<option value="Kyle">Kyle</option>
+					<option value="La Motte">La Motte</option>
+					<option value="Lousiville">Louisville</option>
+					<option value="Milwaukee">Milwaukee</option>
+					<option value="Minneapolis">Minneapolis</option>
+					<option value="Minot">Minot</option>
+					<option value="Naperville">Naperville</option>
+					<option value="Omaha">Omaha</option>
+					<option value="Oskaloosa">Oskaloosa</option>
+					<option value="Park Ridge">Park Ridge</option>
+					<option value="Piqua">Piqua</option>
+					<option value="Rockford">Rockford</option>
+					<option value="Scenic">Scenic</option>
+					<option value="Sioux Falls">Sioux Falls</option>
+					<option value="St. Louis">St. Louis</option>
+					<option value="St. Paul">St. Paul</option>
+					<option value="Sterling Heights">Sterling Heights</option>
+					<option value="Vienna">Vienna</option>
+					<option value="Williston">Williston</option>
+				</select>
+				<br>
+				<br>
+				<label><b>CFO Organization</b></label> <br>
+				<input type="radio" value="Buklod" name="cfo-organization" /> Buklod <br/>
+				<input type="radio" value="KADIWA" name="cfo-organization" /> KADIWA <br/>
+				<input type="radio" value="binhi" name="cfo-organization" /> binhi <br/>
+				<br/>
+				<label><b>Sport</b></label> <br>
+				<select name="sport" id="sport">
+					<option value="Basketball">Basketball</option>
+					<option value="Volleyball">Volleyball</option>
+					<option value="Bowling">Bowling</option>
+					<option value="Darts">Darts</option>
+					<option value="Chess">Chess</option>
+					<option value="Speed Cubing">Speed Cubing</option>
+					<option value="Sport Stacking">Sport Stacking</option>
+					<option value="Football">Football</option>
+					<optgroup label="Swimming">
+						<option value="Freestyle">Freestyle</option>
+						<option value="Backstroke">Backstroke</option>
+						<option value="Breastroke">Breastroke</option>
+						<option value="Butterfly">Butterfly</option>
+						<option value="Medley Relay">Medley Relay</option>
+					</optgroup>
+					<option value="Badminton">Badminton</option>
+					<option value="Table Tennis">Table Tennis</option>
+					<option value="Tennis">Tennis</option>
+					<optgroup label="Track Events">
+						<option value="Sprint 100m">Sprint 100m</option>
+						<option value="Sprint 200m">Sprint 200m</option>
+						<option value="Sprint 400m">Sprint 400m</option>
+						<option value="Relay 4x100">Relay 4x100</option>
+					</optgroup>
+					<option value="Archery">Archery</option>
+					<option value="Karate">Karate</option>
+					<option value="Taekwondo">Taekwondo</option>
+					<option value="Dodgeball">Dodgeball</option>
+					<option value="Golf">Golf</option>
+				</select>
+				<hr style="margin-top: 10px; margin-bottom: 0px;">
+				<br/>
+				<button id="btnsub" onclick='SubForm()'><b>Submit</b></button>
+			</fieldset>
+		</form>
     <br>
-	<button onclick='SubForm()'><b>Submit</b></button>
 </body>
 </html>

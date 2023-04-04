@@ -1,0 +1,33 @@
+
+#formborder{
+    width: 300px;
+}
+
+body{
+    width: auto;
+    margin: 0;
+}
+
+#btnsub{
+    background-color: #adadad;
+    padding: 5px;
+    border-radius: 50px;
+    border: none;
+    width: 250px;
+    margin-left: 25px;
+    margin-bottom: 10px;
+}
+
+#btnsub:hover{
+    background-color: #ad0000;
+    color: white;
+}    
+
+h1, h2{
+    text-align: center;
+}
+
+#myForm{
+    justify-content: center;
+    display: flex;
+}
